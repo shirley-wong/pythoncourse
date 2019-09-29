@@ -154,7 +154,7 @@ def exercise01():
 
 
 class TestAssignment3(unittest.TestCase):
-    '''
+    
     def test_exercise01(self):
         print('Testing exercise 1')
         b1, b2, b3 = exercise01()
@@ -170,7 +170,7 @@ class TestAssignment3(unittest.TestCase):
         self.assertTrue(3 in b2.get_dim())
         self.assertTrue(8 in b2.get_dim())
         self.assertTrue(b2.combine(Box(1,1))==Box(4,9))
-    '''
+    
     def test_exercise02(self):
         print('Testing exercise 2')
         db = MangoDB()
