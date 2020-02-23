@@ -156,9 +156,7 @@ def exercise07(n):
 def exercise08(s):
     # This function receives a string. The string should be casted to an int and then a float and returns each separately
     
-    int_s = int(s)
-    
-    float_s = float(s)
+    int_s, float_s = int(s), float(s)
     
     return int_s, float_s
 
