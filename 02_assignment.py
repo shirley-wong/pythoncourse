@@ -96,11 +96,8 @@ def exercise04(more_temperatures, iot_sensor_points, a, b, c, d, e):
     for k, v in iot_sensor_points.items():
         temperatures.append(v)
 
-    temperatures.append(a)
-    temperatures.append(b)
-    temperatures.append(c)
-    temperatures.append(d)
-    temperatures.append(e)
+    temp = [a, b, c, d, e]
+    temperatures.extend(temp)
 
     temperatures.sort(reverse = True)
 
