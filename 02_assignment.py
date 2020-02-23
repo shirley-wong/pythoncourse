@@ -135,10 +135,7 @@ def exercise06(n):
     # ------ Place code below here \/ \/ \/ ------
 
     length_n = len(n)
-    sum_n = 0
-
-    for num in n:
-        sum_n += num 
+    sum_n = sum(n)
     average_n = sum_n / length_n
 
     # ------ Place code above here /\ /\ /\ ------
