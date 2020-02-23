@@ -134,9 +134,7 @@ def exercise06(n):
 
     # ------ Place code below here \/ \/ \/ ------
 
-    length_n = len(n)
-    sum_n = sum(n)
-    average_n = sum_n / length_n
+    length_n, sum_n, average_n = len(n), sum(n), sum(n)/len(n)
 
     # ------ Place code above here /\ /\ /\ ------
     return length_n, sum_n, average_n
