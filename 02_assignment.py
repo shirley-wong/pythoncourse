@@ -188,18 +188,13 @@ def exercise10(sentence):
 
     # ------ Place code below here \/ \/ \/ ------
 
-    re = (str.swapcase(sentence))[::-1]
+    swaps = {'_':' ', ' ':'_'}
+    for i in (sentence.swapcase())[::-1]:
+        if i in swaps.keys():
+            reversed += swaps[i]
+        else: 
+            reversed += i
 
-    # not-the-best method: reversed = reversed.replace(' ', '_')
-    # To swap between '_' and ' ', using replace is not good enough.  Therefore, a loop is needed.
-
-    test = list(re)
-    for i in range(len(re)):
-        if test[i] == ' ':
-            test[i] = '_'
-        elif test[i] == '_':
-            test[i] = ' '
-    reversed = reversed.join(test)
     
 
     # ------ Place code above here /\ /\ /\ ------
