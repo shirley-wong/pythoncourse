@@ -173,7 +173,7 @@ def exercise09():
     
     # ------ Place code below here \/ \/ \/ ------
     
-    for n in range(0,10):
+    for i in range(11):
         dog_media = r.get(url=url)
         dogs.append(str(dog_media.content))
     
